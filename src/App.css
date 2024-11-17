@@ -99,6 +99,39 @@
   text-shadow: 0 0 10px rgba(156, 163, 175, 0.3);
 }
 
+.glowing {
+  position: relative;
+}
+
+.row-glow-pink {
+  box-shadow: 0 0 15px 3px rgba(236, 72, 153, 0.7); /* Pink glow using #ec4899 */
+}
+
+.row-glow-blue {
+  box-shadow: 0 0 15px 3px rgba(59, 130, 246, 0.7); /* Blue glow using #3b82f6 */
+}
+
+.col-glow-pink {
+  box-shadow: 0 0 15px 3px rgba(236, 72, 153, 0.7); /* Pink glow using #ec4899 */
+}
+
+.col-glow-blue {
+  box-shadow: 0 0 15px 3px rgba(59, 130, 246, 0.7); /* Blue glow using #3b82f6 */
+}
+
+
+/* Double Glow Effects */
+.double-glow-pink-pink {
+  border-radius: 50%; 
+  box-shadow: 0 0 15px 3px rgba(236, 72, 153, 0.7); /* Pink glow using #ec4899 */  
+}
+
+.double-glow-blue-blue {
+  border-radius: 50%; 
+  box-shadow: 0 0 15px 3px rgba(59, 130, 246, 0.7); /* Blue glow using #3b82f6 */
+}
+
+
 /* Add responsive styles for the menu */
 @media (max-width: 768px) {
   .cell-menu {
