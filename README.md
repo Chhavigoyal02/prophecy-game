@@ -5,10 +5,10 @@
 To play the game online, visit: [https://prophecy-game.netlify.app/](https://prophecy-game.netlify.app/)  
 
 To run locally:
-1. Clone the repo: git clone https://github.com/Chhavigoyal02/prophecy-game.git
-2. Navigate to the project directory: cd prophecy-game
-3. Install dependencies: npm install
-4. Run: npm run dev
+1. Clone the repo: `git clone https://github.com/Chhavigoyal02/prophecy-game.git`
+2. Navigate to the project directory: `cd prophecy-game`
+3. Install dependencies: `npm install`
+4. Run: `npm run dev`
 
    
 ---
