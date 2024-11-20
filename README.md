@@ -1,12 +1,30 @@
-# React + Vite
+# Foundations of AI Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Prophecies Game**  
 
-Currently, two official plugins are available:
+To play the game online, visit: [https://prophecy-game.netlify.app/](https://prophecy-game.netlify.app/)  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+To run locally:
+1. Clone the repo : ```bash
+   git clone https://github.com/Chhavigoyal02/prophecy-game.git
+2. Navigate to the project directory: cd prophecy-game
+3. Install dependencies: npm install
+4. Run: npm run dev
 
+   
+---
+
+## Features  
+
+1. **Game Modes**:  
+   - **Single Player**: Compete against an AI bot with adjustable strategies.  
+   - **Multiplayer**: Play with a friend and challenge each other.
+     
+2. **AI Strategies**:  
+   - **Random Bot**: Makes moves randomly.  
+   - **Optimal Bot**: Implements an optimized minimax algorithm with alpha beta pruning.
+
+---
 **NOTE:**
-- Switching between Random and Optimal Bot for the Single Player Mode:
+To toggle between the Random and Optimal Bot in Single Player Mode:
 In [line 26 of Grid.jsx](./src/components/Grid.jsx#L26), replace `OptimalBot()` with `RandomBot()` or the other way around to switch between them.
