@@ -7,7 +7,7 @@ import { RandomBot } from '../game/bot';
 import { OptimalBot } from '../game/optimal-bot';   
 import '../App.css';
 
-const Grid = ({ gameMode = 'two-player', playerTurn = 'first', gameStarted, setGameStarted, currentPlayer, setCurrentPlayer }) => {
+const Grid = ({ gameMode = 'two-player', playerTurn = 'first', gameStarted, setGameStarted, currentPlayer, setCurrentPlayer, botType = 'random' }) => {
   const navigate = useNavigate();
   const initialGrid = Array(4).fill().map(() => Array(5).fill(null));
   const [grid, setGrid] = useState(initialGrid);
@@ -23,7 +23,8 @@ const Grid = ({ gameMode = 'two-player', playerTurn = 'first', gameStarted, setG
   const [player1Score, setPlayer1Score] = useState(0);
   const [player2Score, setPlayer2Score] = useState(0);
   const [winner, setWinner] = useState(null);
-  const [bot] = useState(gameMode === 'single-player' ? new OptimalBot() : null);
+  const [bot] = useState(gameMode === 'single-player' ? 
+    (botType === 'optimal' ? new OptimalBot() : new RandomBot()) : null);
   const [isBotThinking, setIsBotThinking] = useState(false);
   const botWorker = new Worker(new URL('../game/botWorker.js', import.meta.url));
   const [glowingCells, setGlowingCells] = useState([]); 

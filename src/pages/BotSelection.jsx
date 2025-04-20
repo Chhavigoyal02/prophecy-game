@@ -2,26 +2,26 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import Buttons from '../components/Buttons';
 
-const SinglePlayerSetup = ({ botType }) => {
+const BotSelection = () => {
   const navigate = useNavigate();
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen p-4">
-      <h1 className="game-title mb-8">Choose Your Turn</h1>
+      <h1 className="game-title mb-8">Choose Your Opponent</h1>
       <div className="flex flex-col space-y-4 w-full max-w-xs">
         <Buttons 
-          text="Play First" 
-          onClick={() => navigate(`/game/single-player/${botType}/first`)}
+          text="Random Bot" 
+          onClick={() => navigate('/game/single-player/random')}
           otherClass="text-lg"
         />
         <Buttons 
-          text="Play Second" 
-          onClick={() => navigate(`/game/single-player/${botType}/second`)}
+          text="Optimal Bot" 
+          onClick={() => navigate('/game/single-player/optimal')}
           otherClass="text-lg"
         />
         <Buttons 
           text="Back" 
-          onClick={() => navigate('/game/single-player')}
+          onClick={() => navigate('/')}
           otherClass="text-lg bg-gradient-to-r from-gray-500 to-gray-600 hover:from-gray-600 hover:to-gray-700"
         />
       </div>
@@ -29,4 +29,4 @@ const SinglePlayerSetup = ({ botType }) => {
   );
 };
 
-export default SinglePlayerSetup; 
+export default BotSelection; 
