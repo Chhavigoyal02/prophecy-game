@@ -22,8 +22,3 @@ To run locally:
 2. **AI Strategies**:  
    - **Random Bot**: Makes moves randomly.  
    - **Optimal Bot**: Implements an optimized minimax algorithm with alpha beta pruning.
-
----
-**NOTE:**
-To toggle between the Random and Optimal Bot in Single Player Mode:
-In [line 26 of Grid.jsx](./src/components/Grid.jsx#L26), replace `OptimalBot()` with `RandomBot()` or the other way around to switch between them.
